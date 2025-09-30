@@ -1,3 +1,5 @@
+document.body.style.zoom = "50%";
+
 const body = document.createElement("div"); 
 body.classList.add("body");
 
@@ -28,4 +30,5 @@ setTimeout(()=>{
         card.style.top = "35%";
     }, 1000);
 }, 3000)
+
 
