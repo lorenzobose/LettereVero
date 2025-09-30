@@ -1,0 +1,63 @@
+.body{
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    top: calc(((100% - 500px) / 2) + 200px);
+    left: 10%;
+    background-color: white;
+    z-index: -3;
+}
+
+.left-flap{
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    top: calc(((100% - 500px) / 2) + 200px);
+    left: 10%;
+    background-color: rgb(189, 164, 142);
+    z-index: -1;
+    clip-path: polygon(0 0, 0 500px, 100% 500px);
+}
+
+.right-flap{
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    top: calc(((100% - 500px) / 2) + 200px);
+    left: 10%;
+    background-color: rgb(197, 170, 147);
+    z-index: 5;
+    clip-path: polygon(100% 0, 0 500px, 100% 500px);
+}
+
+.top-flap{
+    width:0;
+    height: 0;
+    border-left: 432px solid transparent;
+    border-right: 432px solid transparent;
+    border-top: 250px solid aquamarine;
+    z-index: 1;
+    position: absolute;
+    left: 10%;
+    top: calc(((100% - 500px) / 2) + 200px);
+    transition: all 1s ease-in;
+    transform-origin: center top;
+}
+
+.card{
+    width: 60%;
+    height: 150px;
+    background-color: crimson;
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(50% + 100px);
+    left: 20%;
+    transition: all 1s ease;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+}
