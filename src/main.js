@@ -16,9 +16,10 @@ function loadArchive(){
             method: "GET",
         })
             .then(res => res.json())
-            .then(x => listaLettere = x)
-    
-    console.log(listaLettere);
+            .then(x => {
+                listaLettere = x
+                console.log(listaLettere);
+            })
 }
 
 /**
