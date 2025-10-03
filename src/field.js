@@ -11,8 +11,7 @@ field.style.transformOrigin = `0px 0px`;
 field.style.width = fieldWidth + "px";
 field.style.height = fieldHeight + "px";
 field.style.overflow = "hidden";
-field.style.transition = "background-color 4s ease"
-field.style.backgroundColor = "sandybrown";
+field.classList.add("field");
 
 function fit() {
 let windowWidth = window.innerWidth;
