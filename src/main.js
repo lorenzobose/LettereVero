@@ -18,7 +18,13 @@ field.appendChild(topFlap);
 const card = document.createElement("div");
 card.classList.add("card");
 field.appendChild(card)
-card.innerHTML = "CIAO AMORE TI AMO TANTOOO"
+
+fetch("/.netlify/functions/latest", {
+    method: "GET",
+})
+    .then(res => res.json)
+    .then(text => card.innerHTML = text.content);
+
 
 setTimeout(()=>{
     topFlap.style.transform = "rotateX(180deg)";

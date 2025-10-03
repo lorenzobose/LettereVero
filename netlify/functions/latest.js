@@ -1,4 +1,4 @@
-const messages = require("./messagesData");
+const messages = require("./messages");
 
 exports.handler = async function(event, context) {
   if (event.httpMethod === "GET") {
