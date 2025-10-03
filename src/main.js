@@ -23,7 +23,7 @@ fetch("/.netlify/functions/latest", {
     method: "GET",
 })
     .then(res => res.json())
-    .then(text => console.log(text));
+    .then(text => card.innerHTML = text.content);
 
 
 setTimeout(()=>{
