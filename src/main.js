@@ -22,7 +22,7 @@ field.appendChild(card)
 fetch("/.netlify/functions/latest", {
     method: "GET",
 })
-    .then(res => res.json)
+    .then(res => res.json())
     .then(text => console.log(text));
 
 
